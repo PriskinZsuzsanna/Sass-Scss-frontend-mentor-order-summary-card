@@ -1,0 +1,48 @@
+%btn {
+    outline: none;
+    border: none;
+    background: none;
+    font-family: $font-family;
+    cursor: pointer;
+
+    a {
+        font-weight: 900;
+    }
+
+    &:hover {
+        transform: scale(1.02);
+        transition: $transition;
+    }
+
+}
+
+@mixin btn() {
+    @extend %btn;
+}
+
+@function set-btn-color($bgcolor){
+    
+    @if(lightness($bgcolor) > 70) {
+        @return $DesaturatedBlue;
+    }
+    @else {
+        @return $White;
+    }
+}
+
+@function set-a-color-to-button-bg($bgcolor) {
+    @if(lightness($bgcolor) > 70) {
+        @return $DesaturatedBlue;
+    }
+    @else {
+        @return $White;
+    }
+}
+
+@mixin set-btn-background($bgcolor) {
+
+    background: $bgcolor;
+    color: set-btn-color($bgcolor)
+    
+}
+

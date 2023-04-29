@@ -1,0 +1,14 @@
+@mixin flex($direction, $justify, $align, $gap, $padding-i, $padding-b) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    padding-inline: $padding-i;
+    padding-block: $padding-b;
+}
+
+
+
+
+

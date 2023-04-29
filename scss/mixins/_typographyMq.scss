@@ -1,0 +1,55 @@
+//font size
+$base-font-mini : .7rem;
+$base-font-mobile : .85rem;
+$base-font-tablet : 1rem;
+$base-font-laptop : 1.05rem;
+$base-font-desktop : 1.1rem;
+
+//font-type
+$body: 1;
+$h1: 1.8;
+$h2: 1.4;
+$h3: 1.2;
+$h4: 1.1;
+$p: 1.1;
+$a: 1.1;
+
+
+@mixin set-text-size($font-type) {
+    font-size: $base-font-mini * $font-type;
+
+    @include mq(mobile) {
+        font-size: $base-font-mobile * $font-type;
+    }
+    @include mq(tablet) {
+        font-size: $base-font-tablet * $font-type;
+    }
+    @include mq(laptop) {
+        font-size: $base-font-laptop * $font-type;
+    }
+    @include mq(desktop) {
+        font-size: $base-font-desktop * $font-type;
+    }
+    
+    
+}
+
+h1 {
+    @include set-text-size($h1);
+    
+}
+h2 {
+    @include set-text-size($h2);
+    
+}
+h3 {
+    @include set-text-size($h3);
+    
+}
+p {
+    @include set-text-size($p)
+}
+a {
+    @include set-text-size($a);
+}
+

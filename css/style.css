@@ -1,0 +1,345 @@
+h1 {
+  font-size: 1.26rem;
+}
+@media (min-width: 376px) {
+  h1 {
+    font-size: 1.53rem;
+  }
+}
+@media (min-width: 626px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 886px) {
+  h1 {
+    font-size: 1.89rem;
+  }
+}
+@media (min-width: 1326px) {
+  h1 {
+    font-size: 1.98rem;
+  }
+}
+
+h2 {
+  font-size: 0.98rem;
+}
+@media (min-width: 376px) {
+  h2 {
+    font-size: 1.19rem;
+  }
+}
+@media (min-width: 626px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 886px) {
+  h2 {
+    font-size: 1.47rem;
+  }
+}
+@media (min-width: 1326px) {
+  h2 {
+    font-size: 1.54rem;
+  }
+}
+
+h3 {
+  font-size: 0.84rem;
+}
+@media (min-width: 376px) {
+  h3 {
+    font-size: 1.02rem;
+  }
+}
+@media (min-width: 626px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 886px) {
+  h3 {
+    font-size: 1.26rem;
+  }
+}
+@media (min-width: 1326px) {
+  h3 {
+    font-size: 1.32rem;
+  }
+}
+
+p {
+  font-size: 0.77rem;
+}
+@media (min-width: 376px) {
+  p {
+    font-size: 0.935rem;
+  }
+}
+@media (min-width: 626px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 886px) {
+  p {
+    font-size: 1.155rem;
+  }
+}
+@media (min-width: 1326px) {
+  p {
+    font-size: 1.21rem;
+  }
+}
+
+a {
+  font-size: 0.77rem;
+}
+@media (min-width: 376px) {
+  a {
+    font-size: 0.935rem;
+  }
+}
+@media (min-width: 626px) {
+  a {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 886px) {
+  a {
+    font-size: 1.155rem;
+  }
+}
+@media (min-width: 1326px) {
+  a {
+    font-size: 1.21rem;
+  }
+}
+
+.card-bottom-secondary-btn button, .card-bottom-primary-btn button, .card-bottom-plan-flex-2-btn button {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: "Red Hat Display", sans-serif;
+  cursor: pointer;
+}
+.card-bottom-secondary-btn button a, .card-bottom-primary-btn button a, .card-bottom-plan-flex-2-btn button a {
+  font-weight: 900;
+}
+.card-bottom-secondary-btn button:hover, .card-bottom-primary-btn button:hover, .card-bottom-plan-flex-2-btn button:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: hsl(225, 100%, 94%);
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  position: relative;
+  z-index: 0;
+}
+@media (min-width: 376px) {
+  body {
+    font-size: 0.85rem;
+  }
+}
+@media (min-width: 626px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 886px) {
+  body {
+    font-size: 1.05rem;
+  }
+}
+@media (min-width: 1326px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 20% 0;
+  background: url("../images/mobile/bg.svg") no-repeat center/cover;
+  z-index: -1;
+}
+@media (min-width: 376px) {
+  body::after {
+    background: url("../images/mobile/bg.svg") no-repeat center/cover;
+  }
+}
+@media (min-width: 626px) {
+  body::after {
+    background: url("../images/mobile/bg.svg") no-repeat center/cover;
+  }
+}
+@media (min-width: 886px) {
+  body::after {
+    background: url("../images/desktop/bg.svg") no-repeat center/cover;
+  }
+}
+@media (min-width: 1326px) {
+  body::after {
+    background: url("../images/desktop/bg.svg") no-repeat center/cover;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin-inline: auto;
+}
+@media (min-width: 626px) {
+  .container {
+    max-width: 490px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  margin-block: 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 13px hsl(225, 100%, 94%);
+  z-index: 10;
+}
+
+.card-top {
+  height: 30%;
+  min-height: 170px;
+  width: 100%;
+  background: url("../images/illustration-hero.svg") no-repeat center/cover;
+}
+@media (min-width: 626px) {
+  .card-top {
+    min-height: 200px;
+  }
+}
+
+.card-bottom {
+  flex: 78%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 5%;
+  padding-block: 1.5rem;
+}
+.card-bottom-title h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.card-bottom-text {
+  padding-inline: 5%;
+}
+.card-bottom-text p {
+  line-height: 1.5;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.card-bottom-plan {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  background: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+}
+.card-bottom-plan-flex-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 0;
+  padding-block: 0;
+}
+.card-bottom-plan-flex-1-choise h3 {
+  color: hsl(223, 47%, 23%);
+}
+.card-bottom-plan-flex-1-choise h3 span {
+  color: hsl(224, 23%, 55%);
+}
+.card-bottom-plan-flex-2-btn button a {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+.card-bottom-plan-flex-2-btn button:hover a {
+  color: #766cea;
+  text-decoration: none;
+}
+.card-bottom-primary-btn {
+  width: 100%;
+}
+.card-bottom-primary-btn button {
+  background: hsl(245, 75%, 52%);
+  color: #fff;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 13px hsl(245, 75%, 52%);
+}
+.card-bottom-primary-btn button a {
+  color: #fff;
+}
+.card-bottom-primary-btn button:hover {
+  background: #766cea;
+}
+.card-bottom-secondary-btn {
+  width: 100%;
+  padding-inline: 5%;
+}
+.card-bottom-secondary-btn button {
+  background: #fff;
+  color: hsl(224, 23%, 55%);
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.card-bottom-secondary-btn button a {
+  color: hsl(224, 23%, 55%);
+}
+.card-bottom-secondary-btn button:hover a {
+  color: #31394e;
+}/*# sourceMappingURL=style.css.map */

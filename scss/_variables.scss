@@ -1,0 +1,46 @@
+//-----------colors
+
+$PaleBlue: hsl(225, 100%, 94%);
+$BrightBlue: hsl(245, 75%, 52%);
+$VeryPaleBlue: hsl(225, 100%, 98%);
+$DesaturatedBlue: hsl(224, 23%, 55%);
+$DarkBlue: hsl(223, 47%, 23%);
+$White: #fff;
+
+
+//------------fonts
+$font-family: 'Red Hat Display', sans-serif;
+
+//------------images
+$bg: 'bg.svg';
+
+
+//------------paddings
+
+$inline-padding-sm: 3%;
+$inline-padding: 5%;
+
+$block-padding-sm: 1.5rem;
+$block-padding: 3rem;
+
+$padding: 1rem;
+
+$button-padding: 1rem 2rem;
+
+//----------gaps
+$gap-sm: .5rem;
+$gap-1: 1rem;
+$gap-2: 2rem;
+
+
+
+//-----------borders-shadows
+$border-radius-sm: .5rem;
+$border-radius-md: 1rem;
+
+$box-shadow-sm: 1px 1px 3px;
+$box-shadow-md: 0 2px 13px;
+
+
+//transitions
+$transition: all .3s ease-in-out;

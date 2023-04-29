@@ -1,0 +1,10 @@
+.card-top {
+    height: 30%;
+    min-height: 170px;
+    width: 100%;
+    background: url('../images/illustration-hero.svg') no-repeat center/cover;
+
+    @include mq(tablet) {
+        min-height: 200px;
+    }
+}

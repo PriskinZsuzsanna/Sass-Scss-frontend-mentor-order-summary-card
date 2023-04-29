@@ -1,0 +1,101 @@
+.card-bottom {
+    flex: 78%;
+    width: 100%;
+    @include flex(column, center, center, $gap-1, $inline-padding, $block-padding-sm);
+
+    &-title {
+        
+        h1 {
+            color: $DarkBlue;
+            font-weight: 900;
+        }
+    }
+
+    &-text {
+        padding-inline: $inline-padding;
+        
+        p {
+            line-height: 1.5;
+            color: $DesaturatedBlue;
+            font-weight: 500;
+        }
+    }
+
+    &-plan {
+        width: 100%;
+        @include flex(row, space-between, center, $gap-1, $padding, $padding);
+        background: $VeryPaleBlue;
+        border-radius: $border-radius-sm;
+        &-flex-1 {
+            @include flex(row, flex-start, center, $gap-1, 0, 0);
+
+            &-choise {
+                
+                h3 {
+                    color: $DarkBlue;
+
+                    span {
+                        color: $DesaturatedBlue
+                    }
+                }
+            }
+        }
+
+        &-flex-2 {
+           &-btn {
+            button {
+                @include btn;
+                
+                a {
+                    color: $BrightBlue;
+                    text-decoration: underline;
+                }
+
+                &:hover a {
+                    color: lighten($BrightBlue, 15%);
+                    text-decoration: none;
+                }
+            }
+           } 
+        }
+    }
+
+    &-primary-btn {
+        width: 100%;
+        button {
+            @include btn;
+            @include set-btn-background($BrightBlue);
+            width: 100%;
+            padding: $button-padding;
+            border-radius: $border-radius-sm;
+            box-shadow: $box-shadow-md $BrightBlue;
+            a {
+                color: set-a-color-to-button-bg($BrightBlue); 
+            }
+
+            &:hover {
+                background: lighten($BrightBlue, 15%);
+            }
+            
+        }
+    }
+    &-secondary-btn {
+        width: 100%;
+        padding-inline: $inline-padding;
+        button {
+            @include btn;
+            @include set-btn-background($White);
+            width: 100%;
+            padding: $button-padding;
+            border-radius: $border-radius-sm;
+            a {
+                color: set-a-color-to-button-bg($White); 
+            }
+
+            &:hover a {
+                color: darken($DesaturatedBlue, 30%);
+            }
+            
+        }
+    }
+}
