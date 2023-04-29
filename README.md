@@ -12,5 +12,6 @@ HTML
 SVG
 MOBILE-FIRST WORKFLOW
 Links
+https://priskinzsuzsanna.github.io/Sass-Scss-frontend-mentor-order-summary-card/
 
 Screenshot
