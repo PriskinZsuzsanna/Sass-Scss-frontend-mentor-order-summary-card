@@ -300,7 +300,7 @@ body {
 }
 .card-bottom-plan-flex-1-choise p {
   color: hsl(223, 47%, 23%);
-  font-weight: bold;
+  font-weight: 900;
 }
 .card-bottom-plan-flex-1-choise p span {
   color: hsl(224, 23%, 55%);
