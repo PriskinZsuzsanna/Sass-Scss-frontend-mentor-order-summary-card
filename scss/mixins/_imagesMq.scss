@@ -1,17 +1,30 @@
 @mixin set-mq-bgImage($img) {
-    background: url('../images/mobile/#{$img}') no-repeat center/cover;
+    background: url(../images/desktop/bg.svg), #E1E9Ff;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
 
     @include mq(mobile) {
-        background: url('../images/mobile/#{$img}') no-repeat center/cover;
+        background: url(../images/desktop/bg.svg), #E1E9Ff;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain;
     }
+
     @include mq(tablet) {
-        background: url('../images/mobile/#{$img}') no-repeat center/cover;
+        background: url(../images/desktop/bg.svg), #E1E9Ff;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain;
     }
+
     @include mq(laptop) {
-        background: url('../images/desktop/#{$img}') no-repeat center/cover;
+        background: url(../images/desktop/bg.svg), #E1E9Ff;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain;
     }
+
     @include mq(desktop) {
-        background: url('../images/desktop/#{$img}') no-repeat center/cover;
+        background: url(../images/desktop/bg.svg), #E1E9Ff;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain;
     }
-    
+
 }

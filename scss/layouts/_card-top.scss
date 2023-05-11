@@ -5,6 +5,6 @@
     background: url('../images/illustration-hero.svg') no-repeat center/cover;
 
     @include mq(tablet) {
-        min-height: 200px;
+        min-height: 240px;
     }
 }

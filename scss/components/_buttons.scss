@@ -4,6 +4,7 @@
     background: none;
     font-family: $font-family;
     cursor: pointer;
+    transition: $transition;
 
     a {
         font-weight: 900;
@@ -11,7 +12,6 @@
 
     &:hover {
         transform: scale(1.02);
-        transition: $transition;
     }
 
 }

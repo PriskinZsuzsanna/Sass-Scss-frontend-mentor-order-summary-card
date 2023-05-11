@@ -71,50 +71,50 @@ h3 {
 }
 
 p {
-  font-size: 0.77rem;
+  font-size: 0.7rem;
 }
 @media (min-width: 376px) {
   p {
-    font-size: 0.935rem;
+    font-size: 0.85rem;
   }
 }
 @media (min-width: 626px) {
   p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 886px) {
   p {
-    font-size: 1.155rem;
+    font-size: 1.05rem;
   }
 }
 @media (min-width: 1326px) {
   p {
-    font-size: 1.21rem;
+    font-size: 1.1rem;
   }
 }
 
 a {
-  font-size: 0.77rem;
+  font-size: 0.7rem;
 }
 @media (min-width: 376px) {
   a {
-    font-size: 0.935rem;
+    font-size: 0.85rem;
   }
 }
 @media (min-width: 626px) {
   a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 886px) {
   a {
-    font-size: 1.155rem;
+    font-size: 1.05rem;
   }
 }
 @media (min-width: 1326px) {
   a {
-    font-size: 1.21rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -124,13 +124,13 @@ a {
   background: none;
   font-family: "Red Hat Display", sans-serif;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .card-bottom-secondary-btn button a, .card-bottom-primary-btn button a, .card-bottom-plan-flex-2-btn button a {
   font-weight: 900;
 }
 .card-bottom-secondary-btn button:hover, .card-bottom-primary-btn button:hover, .card-bottom-plan-flex-2-btn button:hover {
   transform: scale(1.02);
-  transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -151,7 +151,9 @@ ul {
 body {
   width: 100%;
   min-height: 100vh;
-  background: hsl(225, 100%, 94%);
+  background: url(../images/desktop/bg.svg), #E1E9Ff;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
   font-size: 0.7rem;
   display: flex;
   flex-direction: column;
@@ -162,6 +164,34 @@ body {
   padding-block: 0;
   position: relative;
   z-index: 0;
+}
+@media (min-width: 376px) {
+  body {
+    background: url(../images/desktop/bg.svg), #E1E9Ff;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+  }
+}
+@media (min-width: 626px) {
+  body {
+    background: url(../images/desktop/bg.svg), #E1E9Ff;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+  }
+}
+@media (min-width: 886px) {
+  body {
+    background: url(../images/desktop/bg.svg), #E1E9Ff;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+  }
+}
+@media (min-width: 1326px) {
+  body {
+    background: url(../images/desktop/bg.svg), #E1E9Ff;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+  }
 }
 @media (min-width: 376px) {
   body {
@@ -183,33 +213,6 @@ body {
     font-size: 1.1rem;
   }
 }
-body::after {
-  content: "";
-  position: absolute;
-  inset: 0 0 20% 0;
-  background: url("../images/mobile/bg.svg") no-repeat center/cover;
-  z-index: -1;
-}
-@media (min-width: 376px) {
-  body::after {
-    background: url("../images/mobile/bg.svg") no-repeat center/cover;
-  }
-}
-@media (min-width: 626px) {
-  body::after {
-    background: url("../images/mobile/bg.svg") no-repeat center/cover;
-  }
-}
-@media (min-width: 886px) {
-  body::after {
-    background: url("../images/desktop/bg.svg") no-repeat center/cover;
-  }
-}
-@media (min-width: 1326px) {
-  body::after {
-    background: url("../images/desktop/bg.svg") no-repeat center/cover;
-  }
-}
 
 .container {
   width: 90%;
@@ -218,7 +221,7 @@ body::after {
 }
 @media (min-width: 626px) {
   .container {
-    max-width: 490px;
+    max-width: 430px;
   }
 }
 
@@ -247,7 +250,7 @@ body::after {
 }
 @media (min-width: 626px) {
   .card-top {
-    min-height: 200px;
+    min-height: 240px;
   }
 }
 
@@ -295,10 +298,11 @@ body::after {
   padding-inline: 0;
   padding-block: 0;
 }
-.card-bottom-plan-flex-1-choise h3 {
+.card-bottom-plan-flex-1-choise p {
   color: hsl(223, 47%, 23%);
+  font-weight: bold;
 }
-.card-bottom-plan-flex-1-choise h3 span {
+.card-bottom-plan-flex-1-choise p span {
   color: hsl(224, 23%, 55%);
 }
 .card-bottom-plan-flex-2-btn button a {
