@@ -71,50 +71,50 @@ h3 {
 }
 
 p {
-  font-size: 0.7rem;
+  font-size: 0.77rem;
 }
 @media (min-width: 376px) {
   p {
-    font-size: 0.85rem;
+    font-size: 0.935rem;
   }
 }
 @media (min-width: 626px) {
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 886px) {
   p {
-    font-size: 1.05rem;
+    font-size: 1.155rem;
   }
 }
 @media (min-width: 1326px) {
   p {
-    font-size: 1.1rem;
+    font-size: 1.21rem;
   }
 }
 
 a {
-  font-size: 0.7rem;
+  font-size: 0.77rem;
 }
 @media (min-width: 376px) {
   a {
-    font-size: 0.85rem;
+    font-size: 0.935rem;
   }
 }
 @media (min-width: 626px) {
   a {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 886px) {
   a {
-    font-size: 1.05rem;
+    font-size: 1.155rem;
   }
 }
 @media (min-width: 1326px) {
   a {
-    font-size: 1.1rem;
+    font-size: 1.21rem;
   }
 }
 
